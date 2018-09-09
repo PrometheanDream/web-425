@@ -1,0 +1,39 @@
+<mat-toolbar class="menu" role="header" [style.backgroundColor]="'#A5D6A7'">
+    <mat-toolbar-row>
+      <button mat-button class="toolbar__icon-button mat-button">
+        <mat-icon></mat-icon>
+        <span style="margin-left: 2px !important;"><h4>Bob's Computer Repair Shop</h4></span>
+      </button>
+      <button mat-button class="mat-button">
+        <h2>About</h2>
+      </button>
+      <button mat-button class="mat-button">
+        <h2>Contact Us</h2>
+      </button>
+      
+  
+      <div fxFlex></div>
+  
+      <!-- User Profile -->
+      <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+        Account
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon></mat-icon>
+          <span>My Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon></mat-icon>
+          <span>Settings</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon></mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  
+  
